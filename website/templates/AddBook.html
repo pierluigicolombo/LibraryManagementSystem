@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Aggiungi Libro{% endblock %} 
+
+{% block content %} 
+<form method="POST">
+    <h3 align="center">Aggiungi Libro</h3>
+    <div class="form-group">
+        <label for="title">titolo</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="title" name="title" 
+            placeholder="aggiungi titolo">
+    </div>
+    <div class="form-group">
+        <label for="description">descrizione</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="description" name="description" 
+            placeholder="aggiungi descrizione">
+    </div>
+    <div class="form-group">
+        <label for="author">autore</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="author" name="author" 
+            placeholder="aggiungi autore">
+    </div>
+    <div class="form-group">
+        <label for="publicationYear">anno pubblicazione</label>
+        <input 
+            type="number" 
+            class="form-control" 
+            id="publicationYear" name="publicationYear" 
+            placeholder="aggiungi anno pubblicazione">
+    </div>
+    <div class="form-group">
+        <label for="numberOfCopies">numero copie</label>
+        <input 
+            type="number" 
+            class="form-control" 
+            id="numberOfCopies" name="numberOfCopies" 
+            placeholder="aggiungi numero copie">
+    </div>
+    <br \>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
